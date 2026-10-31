@@ -1,0 +1,35 @@
+window.__CONFIG__ = {
+  // The URL for the CORS proxy, the URL must NOT end with a slash!
+  // If not specified, the onboarding will not allow a "default setup". The user will have to use the extension or set up a proxy themselves
+  VITE_CORS_PROXY_URL: "",
+
+  // The READ API key to access TMDB
+  VITE_TMDB_READ_API_KEY: "",
+
+  // The DMCA email displayed in the footer, null to hide the DMCA link
+  VITE_DMCA_EMAIL: null,
+
+  // Whether to disable hash-based routing, leave this as false if you don't know what this is
+  VITE_NORMAL_ROUTER: true,
+
+  // The backend URL(s) to communicate with - can be a single URL or comma-separated list (e.g., "https://server1.com,https://server2.com")
+  VITE_BACKEND_URL: null,
+
+  // The server-side scraper API (themasman/scraper). Its sources run on the
+  // backend and reach origins through the rotating container egress pool.
+  // Empty or null disables backend sources entirely.
+  VITE_SCRAPER_URL: "https://api.zstream.mov",
+
+  // A comma separated list of disallowed IDs in the case of a DMCA claim - in the format "series-<id>" and "movie-<id>"
+  VITE_DISALLOWED_IDS: "movie-831988, movie-298454",
+  // Allowing FEBBOX API TO BE AENBALED.
+  VITE_ALLOW_FEBBOX_KEY: "true",
+
+  // Site-wide ad network script, injected once into <head> on non-player pages.
+  // Disabled: the harmeracta tag it pointed at only ever served an empty 5-byte
+  // stub, and the popunder (configured at build time) is the only ad we want
+  // running. Set the URL and flip this back to "true" to re-enable -- config.js
+  // is fetched at runtime, so that needs no rebuild.
+  VITE_ENABLE_GLOBAL_AD_SCRIPT: "false",
+  VITE_GLOBAL_AD_SCRIPT_URL: "",
+};
